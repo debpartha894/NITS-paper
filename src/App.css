@@ -1,0 +1,77 @@
+.nav-bar {
+  @apply flex flex-wrap justify-between shadow-lg
+  px-5 py-4 lg:px-16 lg:py-6
+}
+
+.nav-active {
+  @apply text-blue-500
+}
+
+.nav-passive {
+  @apply border-transparent p-2 border-b-2 hover:text-blue-600 hover:border-blue-500 duration-300 ease-in
+}
+
+.whole-class {
+  @apply px-5 py-4 lg:px-16 lg:py-6 my-5;
+}
+
+.whole-class-x {
+  @apply px-5 lg:px-16;
+}
+
+.grid-col-3 {
+  @apply grid md:grid-cols-2 lg:grid-cols-3 gap-10;
+}
+
+.grid-col-4 {
+  @apply grid md:grid-cols-2 lg:grid-cols-4 gap-10;
+}
+
+/* //! DEPARTMENT  */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@500&display=swap');
+
+.department {
+  font-family: 'Architects Daughter',
+    cursive;
+  font-family: 'Dancing Script',
+    cursive;
+}
+
+.depImg {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.department-name {
+  @apply font-extrabold text-transparent text-2xl md:text-2xl lg:text-4xl bg-clip-text bg-gradient-to-r from-blue-400 via-blue-600 to-gray-700 underline underline-offset-2 lg:underline-offset-8 decoration-wavy decoration-sky-400 text-center
+}
+
+.department-card {
+  @apply shadow-md shadow-blue-500/50 text-center py-4 lg:py-10 text-4xl text-gray-700 hover:text-gray-900 hover:font-extrabold hover:bg-teal-400 duration-200 ease-in hover:scale-110 border-2 border-teal-500 hover:border-teal-300;
+}
+
+.semester-card {
+  @apply py-16 shadow-inner shadow-cyan-500/50 text-gray-700 hover:text-gray-900 hover:font-semibold duration-200 ease-in hover:scale-95 border-t-4 border-l-4 border border-teal-400 hover:border-teal-300
+}
+
+.semester-card-2 {
+  @apply py-16 shadow-md shadow-cyan-500/50 text-gray-700 hover:text-gray-900 hover:font-semibold duration-200 ease-in hover:scale-95 border-r-4 border-b-4 border border-teal-400 hover:border-teal-300
+}
+
+
+.sub-card {
+  @apply shadow-md shadow-blue-500/50 text-center text-lg md:text-2xl lg:text-3xl text-gray-700 hover:text-gray-900 hover:font-extrabold hover:bg-teal-400 duration-200 ease-in hover:scale-105 border-2 border-teal-500 hover:border-teal-300;
+}
+
+.sub-card:nth-child(odd){
+  @apply rounded-tl-3xl rounded-br-3xl;
+}
+
+.sub-card:nth-child(even) {
+  @apply rounded-tr-3xl rounded-bl-3xl;
+}
+
+.paper-card {
+  @apply shadow-md shadow-blue-500/50 text-center text-lg md:text-xl lg:text-xl text-gray-700 hover:text-gray-900 rounded-lg py-10 hover:font-extrabold hover:bg-teal-400 duration-200 ease-in hover:scale-105 border-2 border-teal-500 hover:border-teal-300;
+}

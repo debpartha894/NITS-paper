@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@500&family=Merienda&family=Noto+Sans+Display&family=Tai+Heritage+Pro&display=swap');
+
+body {
+    font-family: 'Architects Daughter',
+        cursive;
+    font-family: 'Dancing Script',
+        cursive;
+    font-family: 'Noto Sans Display',
+        sans-serif;
+    background-color: rgb(224, 224, 224);
+}
+
+.centered-axis-xy {
+    position : absolute;
+    left     : 50%;
+    top      : 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-zoom {
+    @apply relative flex items-center justify-center overflow-hidden shadow-xl w-full h-72 rounded-2xl;
+}
+
+.card-zoom-image {
+    @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
+}
+
+.card-zoom-text {
+    @apply absolute text-5xl font-black transition-all duration-500 ease-in-out transform scale-150 text-white opacity-80;
+}
+
+.card-zoom:hover .card-zoom-image {
+    @apply scale-150;
+}
+
+.card-zoom:hover .card-zoom-text {
+    @apply scale-100;
+}
+
+nav {
+    font-family: 'Merienda',
+    cursive;
+}
